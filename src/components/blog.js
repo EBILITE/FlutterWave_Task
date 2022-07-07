@@ -6,7 +6,7 @@ const blog = ({ jetpack_featured_media_url, title, excerpt, parsely ,id}) => {
   const newTitle = title?.rendered;
   const para = excerpt?.rendered
   const publisher = parsely?.meta?.publisher?.name
-  console.log(newTitle);
+  // console.log(newTitle);
   return (
     <section className="card">
       <div className="card-cont">

@@ -15,25 +15,13 @@ const AppProvider = ({ children }) => {
       const response = await axios.get(url);
       const data = response.data;
       setList([...list, ...data]);
-      setLoading(false)
-      // console.log(response)
-      // console.log(data)
+      setLoading(false);
     } catch (error) {
       console.log(error);
-      setLoading(false)
+      setLoading(false);
     }
 
-    // setList(result);
-
-    // try {
-    //   const response = await fetch(url);
-    //   const data = await response.json();
-    //   setList(data);
-    //   setLoading(false);
-    // } catch (error) {
-    //   console.log(error);
-    //   setLoading(false);
-    // }
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {

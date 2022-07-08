@@ -1,4 +1,5 @@
 import React from "react";
+import UsingHooks from "../UsingHook";
 
 const footer = () => {
   return (
@@ -10,7 +11,9 @@ const footer = () => {
           Getting started is easy. Just pay a one time <span>$25 fee </span>and
           everything is ready to go.
         </p>
-        <button>Join Us</button>
+        
+          <UsingHooks />
+        
       </div>
     </footer>
   );

@@ -574,7 +574,7 @@ footer{
 /* =======================singleList container============= */
 
 .singleList-cont{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   /* height: 100%; */
 }
@@ -593,7 +593,7 @@ footer{
 /* =====================SingleListItem Media Query================ */
 @media (min-width: 320px) and (max-width: 480px) { 
   .list-cont{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 90%;
     margin: 0 auto;
   } 
@@ -615,7 +615,7 @@ footer{
     position: absolute;
   }
   .list-cont{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 80%;
     margin: 0 auto;
   } 
@@ -637,7 +637,7 @@ footer{
     
   }
   .list-cont{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 80%;
     margin: 0 auto;
   } 

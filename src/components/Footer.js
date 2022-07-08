@@ -11,9 +11,8 @@ const footer = () => {
           Getting started is easy. Just pay a one time <span>$25 fee </span>and
           everything is ready to go.
         </p>
-        
-          <UsingHooks />
-        
+
+        <UsingHooks />
       </div>
     </footer>
   );

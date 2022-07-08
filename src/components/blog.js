@@ -24,7 +24,10 @@ const blog = ({ jetpack_featured_media_url, title, excerpt, parsely ,id}) => {
             dangerouslySetInnerHTML={{ __html: newTitle }}
             className="line-spacing"
           />
-          <p dangerouslySetInnerHTML={{ __html: para }} className="para-cont" />
+          <p
+            dangerouslySetInnerHTML={{ __html: para.substring(0, 200) }}
+            className="para-cont"
+          />
           <div className="readme-cont">
             <p>8 min Read</p>
             <Link to={`/home/${id}`}>

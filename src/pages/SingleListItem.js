@@ -92,7 +92,9 @@ const SingleListItem = () => {
                       className="line-spacing"
                     />
                     <p
-                      dangerouslySetInnerHTML={{ __html: para }}
+                      dangerouslySetInnerHTML={{
+                        __html: para.substring(0, 200),
+                      }}
                       className="para-cont"
                     />
                     <div className="readme-cont">

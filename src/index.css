@@ -433,6 +433,9 @@ footer{
   margin: 0 auto;
   text-align: justify;
   margin-top: 1rem;
-  
-  
+}
+.moreArticleCard{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
 }

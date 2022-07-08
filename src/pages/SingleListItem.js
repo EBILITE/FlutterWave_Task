@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
@@ -24,7 +24,7 @@ const SingleListItem = () => {
       console.log(error);
       setLoading(false);
     }
-  },[id]);
+  }, [id]);
 
   const fetchUrl = async () => {
     setLoading(true);
@@ -42,7 +42,7 @@ const SingleListItem = () => {
 
   useEffect(() => {
     fetchData();
-  }, [id,fetchData]);
+  }, [id, fetchData]);
 
   useEffect(() => {
     fetchUrl();
@@ -57,14 +57,14 @@ const SingleListItem = () => {
   return (
     <section className="singleList-cont">
       <div className="list-cont">
-        <div></div>
-        <h4>By {parsely?.meta?.creator[0]}</h4>
-        <h2>{title?.rendered}</h2>
+        <div>
+          <h4>By {parsely?.meta?.creator[0]}</h4>
+          <h2>{title?.rendered}</h2>
 
-        <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-          {content?.rendered}
-        </ReactMarkdown>
-
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+            {content?.rendered}
+          </ReactMarkdown>
+        </div>
         <h3>More Articles</h3>
         <div className="moreArticleCard">
           {newUrl.map((item, id) => {
@@ -73,7 +73,7 @@ const SingleListItem = () => {
             const newTitle = title?.rendered;
             const para = excerpt?.rendered;
             const publisher = parsely?.meta?.publisher?.name;
-            console.log(item.id);
+
             return (
               <section className="card" key={id}>
                 <div className="card-cont">

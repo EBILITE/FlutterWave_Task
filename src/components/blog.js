@@ -25,7 +25,7 @@ const blog = ({ jetpack_featured_media_url, title, excerpt, parsely ,id}) => {
             className="line-spacing"
           />
           <p
-            dangerouslySetInnerHTML={{ __html: para.substring(0, 200) }}
+            dangerouslySetInnerHTML={{ __html: para.substring(0, 250) }}
             className="para-cont"
           />
           <div className="readme-cont">

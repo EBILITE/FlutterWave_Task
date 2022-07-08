@@ -14,8 +14,8 @@ const SingleBlog = () => {
   const title = newList?.title?.rendered;
   const img = newList?.jetpack_featured_media_url;
   const publisher = newList?.parsely?.meta?.publisher?.name;
- console.log(id)
-  // console.log(rendered);
+ 
+  
   if (loading) {
     return <div></div>;
   }
